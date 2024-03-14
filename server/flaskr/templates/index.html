@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Temperature and Humidity Data</title>
+        <script src="https://cdn.socket.io/socket.io-3.0.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <style>
+            .chart-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 50%; /* Adjust the width as needed */
+                margin: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 style="text-align: center">Temperature and Humidity Data</h1>
+
+        <div class="chart-container">
+            <canvas id="dataChart"></canvas>
+        </div>
+
+        <script src="{{ url_for('static', filename='script.js') }}"></script>
+    </body>
+</html>

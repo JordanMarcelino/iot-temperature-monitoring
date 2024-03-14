@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "flaskr"
+version = "0.1.0"
+description = "Monitoring temperature with esp32"
+authors = ["JordanMarcelino <jhordan.marcelino@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+flask = "^3.0.2"
+flask-socketio = "^5.3.6"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
